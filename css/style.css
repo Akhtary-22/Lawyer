@@ -1,0 +1,455 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #204f87;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.banner {
+    background-image: url(../images/banner-png.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.height {
+    min-height: 80vh;
+}
+
+.banner h1 {
+    color: #ffff;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 58px;
+}
+
+.icon {
+    position: absolute;
+    color: #ffff;
+    left: 50%;
+    bottom: 100px;
+    transform: translate(-50%);
+    font-size: 20px;
+    animation: 1s linear 0s infinite alternate none running updown;
+}
+
+@keyframes updown {
+    0% {
+        bottom: 70px;
+    }
+
+    100% {
+        bottom: 40px;
+    }
+}
+
+.who_we_are {
+    padding: 100px;
+}
+
+.who_we_are span {
+    display: block;
+    background-color: #e76128;
+    height: 3px;
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.who_we_are h2 {
+    color: #33417c;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 31px;
+}
+
+.who_we_are p {
+    font-family: 'Open Sans', sans-serif;
+    color: #bab5b2;
+    font-size: 16px;
+}
+
+.who_we_are img {}
+
+.what_we_do {
+    background-color: #fbfbfb;
+    background-image: url(../images/what-we-are-background.png);
+    background-repeat: no-repeat;
+    background-size: 59%;
+    padding: 100px 0;
+    background-position: bottom right;
+}
+
+.what_we_do span {
+    display: block;
+    background-color: #e76128;
+    height: 3px;
+    width: 50px;
+    margin: auto;
+}
+
+.what_we_do h1 {
+    color: #3a1372;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+.item {
+    position: relative;
+
+}
+
+.item img {
+    width: 100%;
+}
+
+.item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    transition: .4s all ease-in-out;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3a1b73+0,36226f+66&0+0,1+61 */
+    background: -moz-linear-gradient(top, rgba(58, 27, 115, 0) 0%, rgba(54, 33, 111, 1) 61%, rgba(54, 34, 111, 1) 66%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(58, 27, 115, 0) 0%, rgba(54, 33, 111, 1) 61%, rgba(54, 34, 111, 1) 66%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(58, 27, 115, 0) 0%, rgba(54, 33, 111, 1) 61%, rgba(54, 34, 111, 1) 66%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#003a1b73', endColorstr='#36226f', GradientType=0);
+    /* IE6-9 */
+
+    opacity: 0;
+    z-index: 0;
+}
+
+.item:hover::before {
+    height: 100%;
+    opacity: .5;
+    z-index: 1;
+}
+
+.content {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    opacity: 0;
+    transition: .5s all ease-in-out;
+}
+
+.item:hover .content {
+    opacity: 1;
+    top: 50%;
+}
+
+.content h1 {
+    color: #ffff;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.icon_2 {
+    position: absolute;
+    left: 45%;
+    bottom: 50px;
+    transform: translate(-50%, -50px);
+    color: #ffff;
+    font-size: 20px;
+    opacity: 0;
+    transition: .5s all ease-in-out;
+}
+
+.item:hover .icon_2 {
+    opacity: 1;
+    left: 50%;
+}
+
+.icon_2 i {}
+
+.our {
+    padding: 150px;
+    background-image: url(../images/our.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80vh;
+
+}
+
+.our_content {
+    padding: 64px;
+    position: relative;
+}
+
+.our_content h1 {
+    color: #ffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.our_content span {
+    display: block;
+    background-color: #e76128;
+    height: 3px;
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.our_content p {
+    color: #a3a0cb;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.our_content a {
+    color: #e76128;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.our_item {
+    position: relative;
+}
+
+
+.our_item img {
+    width: 100%;
+}
+
+.our_item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    transition: .4s all ease-in-out;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3a1b73+0,36226f+66&0+0,1+61 */
+    background: -moz-linear-gradient(top, rgba(58, 27, 115, 0) 0%, rgba(54, 33, 111, 1) 61%, rgba(54, 34, 111, 1) 66%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(58, 27, 115, 0) 0%, rgba(54, 33, 111, 1) 61%, rgba(54, 34, 111, 1) 66%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(58, 27, 115, 0) 0%, rgba(54, 33, 111, 1) 61%, rgba(54, 34, 111, 1) 66%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#003a1b73', endColorstr='#36226f', GradientType=0);
+    /* IE6-9 */
+    opacity: 0;
+    z-index: 0;
+}
+
+.our_item:hover::before {
+    height: 100%;
+    opacity: .5;
+    z-index: 1;
+}
+
+.content_our {
+    position: absolute;
+    left: 40%;
+    bottom: 10%;
+    transform: translate(-47%, -10%);
+    width: 56%;
+    opacity: 0;
+    transition: .5s all ease-in-out;
+}
+
+.our_item:hover .content_our {
+    opacity: 1;
+    bottom: 15%;
+}
+
+.content_our h1 {
+    color: #ffff;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.language {
+
+    padding: 100px;
+    text-align: center;
+
+}
+
+.language_content {}
+
+.language_content span {
+
+    display: block;
+
+    background-color: #e76128;
+
+    height: 3px;
+
+    width: 50px;
+
+    margin: auto;
+}
+
+.language_content h1 {
+
+    color: #3a1372;
+
+    font-family: 'Montserrat', sans-serif;
+
+    text-align: center;
+
+    padding: 50px;
+}
+
+.language_1 {}
+
+.language_1 h1 {
+    color: #3a1372;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.language_1 p {
+    font-family: 'Open Sans', sans-serif;
+    color: #bab5b2;
+    font-size: 16px;
+    text-align: left;
+}
+
+.language_1 h3 {
+    color: #e76128;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    text-align: left;
+}
+
+.contract_section {
+    background-color: #36226f;
+    padding: 100px;
+}
+.contract_section span {
+    display: block;
+    background-color: #e76128;
+    height: 3px;
+    width: 50px;
+    margin: auto;
+}
+.contract_section h2 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 34px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contract_section p {
+    color: #ffffff;
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 50px;
+}
+
+.contract_section form {
+    background-color: transparent;
+}
+
+.contract_section form input {
+    /* width: 100%; */
+    background: transparent;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid#564a98;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.contract_section form textarea {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid#564a98;
+}
+
+.send_form {
+    justify-content: space-between;
+}
+
+.send_btn {
+    width: 100%;
+    text-align: center;
+    padding: 5px 5px;
+}
+
+.send_btn input[type=submit] {
+    background-color: #e76128;
+    border: none;
+    border: 1px solid #e76128;;
+    padding: 11px 100px;
+}
+
+footer {
+    background: #16102b;
+    overflow: hidden;
+}
+
+.footer_content {
+    padding: 50px;
+    margin-left: 140px;
+}
+
+.Privacy {
+    float: left;
+    width: 30%;
+}
+
+.Privacy ul {
+    list-style: none;
+}
+
+.Privacy ul li {
+    margin-right: 20px;
+    float: left;
+}
+
+.Privacy ul li a {
+    color: #c1bddb;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.social_icon {
+    float: right;
+    width: 30%;
+}
+
+.social_icon ul {
+    list-style: none;
+}
+
+.social_icon ul li {
+    float: left;
+    margin: 5px;
+}
+
+.social_icon ul li a {
+    color: #c1bddb;
+    font-size: 20px;
+}
+
+/*font-family: 'Montserrat', sans-serif;/*
+   /*font-family: 'Open Sans', sans-serif;/*}
